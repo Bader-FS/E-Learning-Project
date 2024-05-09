@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Domain;
 use App\Models\Prof;
+use App\Models\Order;
+use App\Models\User;
 
 
 class Course extends Model
@@ -35,5 +37,13 @@ class Course extends Model
 
     public function prof(){
         return $this->belongsTo(Prof::class,'prof_id','id');
+    }
+
+    //public function user(){
+    //    return $this->belongsTo(User::class);
+    //}
+
+    public function orders() {
+        return $this->hasMany(Order::class);
     }
 }

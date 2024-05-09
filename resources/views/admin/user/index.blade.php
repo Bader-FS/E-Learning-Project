@@ -1,7 +1,7 @@
 @extends('admin.master')
 
 @section('title')
-Profs
+Users Of the Plateforme
 @endsection
 
 
@@ -10,13 +10,12 @@ Profs
 @endsection
 
 @section('title_page')
-Profs List
+Users List
 @endsection
 
+
 @section('content')
-<div class="card-header">
-    <a href="{{route('profs.create')}}" class="btn btn-outline-primary">Create New Prof</a>
-</div>
+
 <div class="card-body">
     <table id="example1" class="table table-bordered table-striped">
                 <thead>
@@ -25,20 +24,25 @@ Profs List
                   <th>Name</th>
                   <th>Email</th>
                   <th>Phone</th>
-                  <th>Actions</th>
+                  <th>Country</th>
+                  <th>Number Of Orders</th>
                 </tr>
                 </thead>
                 <tbody>
                 @php $i=1; @endphp
-                @foreach($profs as $prof)
+                @foreach($users as $user)
                 <tr>
                   <td>{{$i++}}</td>
-                  <td>{{$prof->name}}</td>
-                  <td>{{$prof->email}}</td>
-                  <td>{{$prof->phone}}</td>
+                  <td>{{$user->name}}</td>
+                  <td>{{$user->email}}</td>
+                  <td>{{$user->phone}}</td>
+                  <td>
+                  {{$user->country}}
+                  </td>
                   <td class="text-center">
-                    <a href="{{route('profs.edit',$prof->id)}}" class="btn btn-sm btn-outline-warning">edit</a>
-                    @include('admin.includes.delete_modal',['type'=>'prof','data'=>$prof,'routes'=>'profs.destroy'])
+                  <span class="badge badge-warning">
+                  {{$user->orders->count()}}
+                  </span>
                   </td>
                 </tr>
                 @endforeach

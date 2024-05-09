@@ -10,29 +10,28 @@
     </div>
 
     <section class="mb-4">
-      <!-- Facebook -->
       <a
         class="btn btn-primary btn-floating m-1"
         style="background-color: #3b5998;"
+        target="_blank"
         href="https://www.facebook.com/BusinessAccelerator1/"
         role="button"
         ><i class="fab fa-facebook-f"></i
       ></a>
 
-
-      <!-- Instagram -->
       <a
         class="btn btn-primary btn-floating m-1"
         style="background-color: #ac2bac;"
+        target="_blank"
         href="https://www.instagram.com/training.edge.consulting/"
         role="button"
         ><i class="fab fa-instagram"></i
       ></a>
 
-      <!-- Linkedin -->
       <a
         class="btn btn-primary btn-floating m-1"
         style="background-color: #0082ca;"
+        target="_blank"
         href="https://www.linkedin.com/company/trainig-edge-consulting/about/"
         role="button"
         ><i class="fab fa-linkedin-in"></i
@@ -40,5 +39,4 @@
      
     </section>
   </div>
-  <!-- Copyright -->
 </footer>

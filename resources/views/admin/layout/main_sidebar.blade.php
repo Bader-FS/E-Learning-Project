@@ -1,13 +1,13 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     
-    <a href="#" class="brand-link text-center">
+    <a href="{{route('dashboard')}}" class="brand-link text-center">
       <img src="{{asset('assets/dist/img/edge_pic_2.png')}}" alt="Logo" height="65"
            style="opacity: .8">
     </a>
 
-    <!-- Sidebar -->
+    
     <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
+      
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img src="{{asset('assets/dist/img/edge_pic_1.jpg')}}" class="img-circle elevation-4" alt="User Image">
@@ -17,7 +17,7 @@
         </div>
       </div>
 
-      <!-- Sidebar Menu -->
+     
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           
@@ -26,6 +26,16 @@
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
+              </p>
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a href="{{route('users.index')}}" class="nav-link {{$route == 'users' ? 'active' : ''}}">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Users
               </p>
             </a>
           </li>
@@ -56,6 +66,19 @@
               </p>
             </a>
           </li>
+
+
+          <li class="nav-item">
+            <a href="{{route('payments.index')}}" class="nav-link {{$route == 'payments' ? 'active' : ''}}">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Payments
+              </p>
+            </a>
+          </li>
+
+
+          
           
         </ul>
       </nav>

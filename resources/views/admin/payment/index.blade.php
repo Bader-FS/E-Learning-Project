@@ -1,7 +1,7 @@
 @extends('admin.master')
 
 @section('title')
-Profs
+Payments
 @endsection
 
 
@@ -10,35 +10,40 @@ Profs
 @endsection
 
 @section('title_page')
-Profs List
+List Of Effectued Payments 
 @endsection
 
 @section('content')
-<div class="card-header">
-    <a href="{{route('profs.create')}}" class="btn btn-outline-primary">Create New Prof</a>
-</div>
+
 <div class="card-body">
     <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
                   <th>#</th>
-                  <th>Name</th>
-                  <th>Email</th>
+                  <th>User Name</th>
+                  <th>User Email</th>
                   <th>Phone</th>
-                  <th>Actions</th>
+                  <th>Course Name</th>
+                  <th>Order Date</th>
+                  <th>Amount</th>
                 </tr>
                 </thead>
                 <tbody>
                 @php $i=1; @endphp
-                @foreach($profs as $prof)
+                @foreach($payments as $payment)
                 <tr>
                   <td>{{$i++}}</td>
-                  <td>{{$prof->name}}</td>
-                  <td>{{$prof->email}}</td>
-                  <td>{{$prof->phone}}</td>
+                  <td>{{$payment->user->name}}</td>
+                  <td>{{$payment->user->email}}</td>
+                  <td>{{$payment->user->phone}}</td>
+                  <td>{{$payment->course->name}}</td>
+                  <td>{{$payment->created_at->format('Y-m-d')}}</td>
                   <td class="text-center">
-                    <a href="{{route('profs.edit',$prof->id)}}" class="btn btn-sm btn-outline-warning">edit</a>
-                    @include('admin.includes.delete_modal',['type'=>'prof','data'=>$prof,'routes'=>'profs.destroy'])
+                    <h5>
+                    <span class="badge badge-info rounded-pill">
+                        ${{$payment->total}}
+                    </span>
+                    </h5>
                   </td>
                 </tr>
                 @endforeach

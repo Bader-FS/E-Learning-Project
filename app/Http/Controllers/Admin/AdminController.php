@@ -8,6 +8,7 @@ use App\Models\Domain;
 use App\Models\User;
 use App\Models\Prof;
 use App\Models\Course;
+use App\Models\Order;
 
 
 class AdminController extends Controller
@@ -16,6 +17,7 @@ class AdminController extends Controller
         $data['route'] = 'dashboard';
         $data['totalDomains'] = Domain::all()->count();
         $data['totalCourses'] = Course::all()->count();
+        $data['totalOrders'] = Order::all()->count();
         $data['totalUsers'] = User::all()->count();
         $data['totalProfs'] = Prof::all()->count();
         return view('admin.dashboard',$data);

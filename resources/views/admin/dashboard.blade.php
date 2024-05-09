@@ -25,7 +25,7 @@ Dashboard
                 <p>Domains</p>
               </div>
               <div class="icon">
-                <i class="ion ion-stats-bars"></i>
+                <i class="fa-solid fa-code-branch"></i>
               </div>
               
             </div>
@@ -40,7 +40,7 @@ Dashboard
                 <p>Professors</p>
               </div>
               <div class="icon">
-                <i class="ion ion-stats-bars"></i>
+                <i class="fa-solid fa-user-tie"></i>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ Dashboard
                 <p>User Registrations</p>
               </div>
               <div class="icon">
-                <i class="ion ion-person-add"></i>
+                <i class="fa-solid fa-user-plus"></i>
               </div>
               
             </div>
@@ -69,7 +69,7 @@ Dashboard
                 <p>Total Courses</p>
               </div>
               <div class="icon">
-                <i class="ion ion-pie-graph"></i>
+                <i class="fa-solid fa-flask"></i>
               </div>
               
             </div>
@@ -79,12 +79,12 @@ Dashboard
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>30</h3>
+                <h3>{{$totalOrders}}</h3>
 
                 <p>Payments</p>
               </div>
               <div class="icon">
-                <i class="ion ion-pie-graph"></i>
+                <i class="fa-solid fa-credit-card"></i>
               </div>
               
             </div>

@@ -5,7 +5,7 @@
   <div class="container owl-carousel trend_course owl-theme">
     @foreach($courses as $course)
     <div class="item">
-      <a href="">
+      <a href="{{route('get_course_slug',[$course->domain->slug,$course->slug])}}">
         <div class="card text-black">
           <img src="{{Storage::url($course->image)}}" class="card-img-top" style="height: 250px; width: 100%;" alt="Apple Computer" />
           <div class="card-body">

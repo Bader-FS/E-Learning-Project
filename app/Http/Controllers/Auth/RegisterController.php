@@ -28,7 +28,12 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
+
+
+    public function registered(){
+        return redirect('/')->with('success','Registered Successfully,Welcome in Our Plateforme');
+    }
 
     /**
      * Create a new controller instance.

@@ -14,7 +14,13 @@
           <a class="nav-link {{$route == 'domains_page' ? 'active' : ''}}" href="{{route('get_domains')}}">Our Domains</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Courses</a>
+          <a class="nav-link {{$route == 'courses_page' ? 'active' : ''}}" href="{{route('get_courses')}}">Courses</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link {{$route == 'order_page' ? 'active' : ''}}" href="{{route('order.index')}}">
+            <i class="fa-solid fa-cart-shopping fa-shake fs-5 mx-2" style="color: #63E6BE;"></i>
+          </a>
         </li>
         
       </ul>

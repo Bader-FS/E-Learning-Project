@@ -14,17 +14,11 @@
         <div class="col-md-6 gx-5 mb-4 py-3">
           <h4><strong>Training Edge Consulting</strong></h4>
           <p class="text-muted">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
-            eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
-            sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+          At Training Edge Consulting, we understand the dynamic landscape of the job market, and our curated selection of courses reflects this understanding. Whether you're looking to delve into technology, finance, marketing, or any other field, we have the resources and expertise to guide you towards achieving your career goals.
           </p>
           <p><strong>What We Offer?</strong></p>
           <p class="text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque voluptate
-            nesciunt laborum incidunt. Officia, quam consectetur. Earum eligendi aliquam illum
-            alias, unde optio accusantium soluta, iusto molestiae adipisci et?
-            Officia, quam consectetur. Earum eligendi aliquam illum
-            alias, unde optio accusantium soluta, iusto molestiae adipisci et?
+          Training Edge Consulting offers a wide range of courses tailored to today's job market demands. From coding to machine learning, AI, digital marketing, and other sought-after fields, our courses provide practical skills and knowledge to help you succeed. With expert instructors and hands-on learning experiences, we're here to guide you on your journey to professional growth and success.
           </p>
         </div>
       </div>
